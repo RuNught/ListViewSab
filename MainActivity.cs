@@ -16,7 +16,7 @@ namespace ListView
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            ListAdapter = new ArrayAdapter<string>(this, Resource.Layout.list_item, countries);
+            ListAdapter = new ArrayAdapter<string>(this, Resource.Layout.abc_list_menu_item_checkbox, countries);
             ListView.TextFilterEnabled = true;
             ListView.ItemClick += delegate (object sender, AdapterView.ItemClickEventArgs args)
             {
